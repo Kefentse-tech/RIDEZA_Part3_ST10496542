@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kefentse-tech.github.io/RIDEZA_Part3_ST10496542/sitemap.xml
+

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Ride | RIDEZA</title>
+    <meta name="description" content="Book a ride with RIDEZA. Choose a convenient and affordable transportation option for your journey.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="images/a.png" alt="RIDEZA logo" style="width:300px;height:300px;">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html">Book a Ride</a>
+            <a href="galleries.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Book a Ride</h2>
+            <p>We'll assist you in getting there if you let us know where you are going.</p>
+        </section>
+
+        <section>
+            <h2>Ride Details</h2>
+
+            <form id="booking-form" class="validate-form">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="(\+27|0)[0-9]{9}"
+                    title="Enter a valid South African phone number."
+                    required
+                >
+
+                <label for="pickup">Pick-up Location:</label>
+                <input type="text" id="pickup" name="pickup" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="rideType">Ride Type:</label>
+                <select id="rideType" name="rideType" required>
+                    <option value="">Select a ride</option>
+                    <option value="go">RIDEZA Go</option>
+                    <option value="student">RIDEZA Student</option>
+                    <option value="family">RIDEZA Family</option>
+                    <option value="schedule">RIDEZA Schedule</option>
+                </select>
+
+                <label for="passengers">Number of Passengers:</label>
+                <select id="passengers" name="passengers" required>
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5">5 Passengers</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea>
+
+                <button type="submit">Request a Ride</button>
+
+                <p id="form-message" role="status" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RIDEZA. All rights reserved.</p>
+        <p>Reliable rides for wherever life takes you.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
+            

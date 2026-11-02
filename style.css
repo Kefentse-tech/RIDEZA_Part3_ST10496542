@@ -1,0 +1,317 @@
+/* RIDEZA - Main Stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #111;
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+nav a {
+     color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 8px 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-card {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+.location {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.location h3 {
+    margin-bottom: 5px;
+}
+
+.location p {
+    margin: 0;
+}
+
+.value-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    margin-top: 0;
+}
+
+.feature-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+        .gallery {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .gallery img {
+        height: 220px;
+    }
+    
+    main {
+        padding: 25px 15px;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}
